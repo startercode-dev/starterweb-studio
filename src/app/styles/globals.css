@@ -1,0 +1,198 @@
+@import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+@import './extractions/main.css';
+@import './extractions/project.css';
+
+@import 'tailwindcss/utilities';
+
+:root {
+    /* Color */
+
+    /* MAIN COLORS  */
+    --blue: #4f46e5;
+    --red: #dc2626;
+    --dark: hsl(241, 63%, 20%);
+    --light: #f6fffb;
+
+    /* MISC COLORS */
+    --red-200: #da4949;
+    --blue-200: hsl(243, 62%, 75%);
+    --blue_hover: #6a63e5;
+
+    /* Grey Scale */
+    --grey-000: #f5f5f6;
+    --grey-100: #e6e6e7;
+    --grey-200: #cfd0d2;
+    --grey-300: #aeafb2;
+    --grey-400: #85868b;
+    --grey-500: #6a6b70;
+    --grey-600: #5a5b60;
+    --grey-700: #4d4d51;
+    --grey-800: #444546;
+    --grey-900: #3b3b3e;
+    --grey-950: #141415;
+
+    /* Blue Scale */
+    --blue-50: #f1f9fe;
+    --blue-100: #e2f3fc;
+    --blue-200: #bee6f9;
+    --blue-300: #84d2f5;
+    --blue-400: #43bced;
+    --blue-500: #1aa4dd;
+    --blue-600: #0c78ab;
+    --blue-700: #0c6998;
+    --blue-800: #0e597e;
+    --blue-900: #124b68;
+    --blue-950: #0c2f45;
+
+    /* Yellow Scale */
+    --yellow-50: #faf9ec;
+    --yellow-100: #f4f0cd;
+    --yellow-200: #ebdf9d;
+    --yellow-300: #dfc865;
+    --yellow-400: #d4af37;
+    --yellow-500: #c59b2d;
+    --yellow-600: #aa7a24;
+    --yellow-700: #885920;
+    --yellow-800: #724921;
+    --yellow-900: #623e21;
+    --yellow-950: #382010;
+
+    /* Purple Scale */
+    --purple-50: #f1f6fc;
+    --purple-100: #e6edf9;
+    --purple-200: #d2def3;
+    --purple-300: #b6c8eb;
+    --purple-400: #98abe1;
+    --purple-500: #7c8dd5;
+    --purple-600: #6570c6;
+    --purple-700: #545cae;
+    --purple-800: #464e8d;
+    --purple-900: #3e4571;
+    --purple-950: #242742;
+
+    /* Section Padding  */
+    /* DESKTOP */
+    --D-section-2xl: 192px;
+    --D-section-xl: 160px;
+    --D-section-lg: 128px;
+    --D-section-md: 112px;
+    --D-section-sm: 96px;
+
+    /* TABLET */
+    --T-section-2xl: 96px;
+    --T-section-xl: 80px;
+    --T-section-lg: 64px;
+    --T-section-md: 56px;
+    --T-section-sm: 48px;
+
+    /* MOBILE */
+    --M-section-2xl: 48px;
+    --M-section-xl: 46px;
+    --M-section-lg: 46px;
+    --M-section-md: 46px;
+    --M-section-sm: 46px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+    }
+}
+* {
+    scroll-behavior: smooth !important;
+}
+
+html,
+body {
+}
+
+@layer base {
+    /* --- HEADER TEXT --- */
+    h1.bold,
+    h2.bold,
+    h3.bold,
+    h4.bold,
+    h5.bold {
+        @apply font-bold;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        @apply font-header font-medium;
+    }
+    .heading-1 {
+        @apply text-[54px] leading-snug text-1 max-sm:text-4xl;
+    }
+    .heading-2 {
+        @apply text-5xl text-1 max-sm:text-3xl;
+    }
+    .heading-3 {
+        @apply text-4xl text-1 max-sm:text-2xl;
+    }
+    .heading-4 {
+        @apply text-3xl text-1;
+    }
+    .heading-5 {
+        @apply text-2xl text-1 max-sm:text-xl;
+    }
+
+    /* --- BODY TEXT --- */
+    p.semibold,
+    span.semibold,
+    a.semibold,
+    strong.semibold,
+    h2.semibold {
+        @apply font-semibold;
+    }
+    p.bold,
+    span.bold,
+    a.bold,
+    strong.bold,
+    h2.bold {
+        @apply font-bold;
+    }
+    p {
+        @apply font-body font-normal;
+    }
+    p.body-2 {
+        @apply font-body-2;
+    }
+    .title-100 {
+        @apply text-3xl text-2 max-sm:text-2xl;
+    }
+    .title-200 {
+        @apply text-2xl leading-relaxed text-2 max-sm:text-lg;
+    }
+    .title-300 {
+        @apply text-lg leading-relaxed text-2;
+    }
+    .base-100 {
+        @apply text-base leading-relaxed text-2;
+    }
+    .base-200 {
+        @apply text-sm leading-relaxed text-3;
+    }
+    .base-300 {
+        @apply text-xs text-3;
+    }
+    .base-400 {
+        @apply text-xs text-4;
+    }
+
+    /* LINKS & BUTTONS */
+    a {
+        @apply cursor-pointer font-body;
+    }
+    a.link-1 {
+        @apply base-100 rounded-secondary cursor-pointer font-sans font-semibold text-1 hover:text-grey-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-1;
+    }
+    a.link-2 {
+        @apply base-100 rounded-secondary cursor-pointer font-sans font-normal text-2 hover:text-grey-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-1;
+    }
+    a.link-3 {
+        @apply base-200 rounded-secondary cursor-pointer font-sans font-normal hover:text-grey-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-1;
+    }
+}

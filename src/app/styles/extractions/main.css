@@ -1,0 +1,161 @@
+.section {
+    @apply bg-1 px-[16px] max-lg:px-7 max-sm:px-4 md:px-[48px] lg:px-[70px];
+}
+.header {
+    @apply px-[70px] max-lg:px-0;
+}
+.section-container {
+    @apply mx-auto max-w-container;
+}
+.header-container {
+    @apply mx-auto max-w-header;
+}
+.button-primary {
+    @apply base-100 inline-block flex max-h-[52px] cursor-pointer cursor-pointer items-center justify-center gap-[10px] whitespace-nowrap rounded-primary-desktop bg-primary-7 px-12 py-3.5 text-center font-body text-[20px] font-semibold text-invert-1 transition-all hover:bg-primary-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-1 max-sm:py-3 xl:max-h-[60px];
+}
+.button-inverted {
+    @apply rounded-primary inline-block max-h-[48px] cursor-pointer bg-transparent px-8 py-3 text-center text-primary-1 ring-1 ring-[var(--blue)] hover:bg-gray-300/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-1 max-lg:rounded-primary-mobile max-sm:py-3;
+}
+.input-primary {
+    @apply rounded-primary max-h-[48px] w-full px-4 py-3 ring-1 ring-100 placeholder:text-grey-400 focus:ring-2 focus:ring-inset focus:ring-primary-1 sm:text-sm sm:leading-6;
+}
+.textarea-primary {
+    @apply rounded-primary w-full px-4 py-3 ring-1 ring-100 placeholder:text-grey-400 focus:ring-2 focus:ring-inset focus:ring-primary-1 sm:text-sm sm:leading-6;
+}
+.select-primary {
+    @apply base-100 rounded-primary h-full appearance-none px-4 py-3 text-2 ring-1 ring-100 focus:ring-2 focus:ring-inset focus:ring-indigo-600;
+}
+.card {
+    @apply rounded-primary bg-secondary-1 px-4 py-5 max-sm:rounded-primary-mobile md:px-6 md:py-7;
+}
+.card--secondary {
+    @apply card rounded-secondary-desktop bg-1 max-sm:rounded-secondary-mobile;
+}
+
+/* SECTION PADDINGS */
+/* 2xl */
+.pt-section-2xl {
+    @apply pt-[var(--D-section-2xl)] max-lg:pt-[var(--T-section-2xl)] max-sm:pt-[var(--M-section-2xl)];
+}
+.pb-section-2xl {
+    @apply pb-[var(--D-section-2xl)] max-lg:pb-[var(--T-section-2xl)] max-sm:pb-[var(--M-section-2xl)];
+}
+.py-section-2xl {
+    @apply py-[var(--D-section-2xl)] max-lg:py-[var(--T-section-2xl)] max-sm:py-[var(--M-section-2xl)];
+}
+
+/* xl */
+.pt-section-xl {
+    @apply pt-[var(--D-section-xl)] max-lg:pt-[var(--T-section-xl)] max-sm:pt-[var(--M-section-xl)];
+}
+.pb-section-xl {
+    @apply pb-[var(--D-section-xl)] max-lg:pb-[var(--T-section-xl)] max-sm:pb-[var(--M-section-xl)];
+}
+.py-section-xl {
+    @apply py-[var(--D-section-xl)] max-lg:py-[var(--T-section-xl)] max-sm:py-[var(--M-section-xl)];
+}
+
+/* lg */
+.pt-section-lg {
+    @apply pt-[var(--D-section-lg)] max-lg:pt-[var(--T-section-lg)] max-sm:pt-[var(--M-section-lg)];
+}
+.pb-section-lg {
+    @apply pb-[var(--D-section-lg)] max-lg:pb-[var(--T-section-lg)] max-sm:pb-[var(--M-section-lg)];
+}
+.py-section-lg {
+    @apply py-[var(--D-section-lg)] max-lg:py-[var(--T-section-lg)] max-sm:py-[var(--M-section-lg)];
+}
+
+/* md */
+.pt-section-md {
+    @apply pt-[var(--D-section-md)] max-lg:pt-[var(--T-section-md)] max-sm:pt-[var(--M-section-md)];
+}
+.pb-section-md {
+    @apply pb-[var(--D-section-md)] max-lg:pb-[var(--T-section-md)] max-sm:pb-[var(--M-section-md)];
+}
+.py-section-md {
+    @apply py-[var(--D-section-md)] max-lg:py-[var(--T-section-md)] max-sm:py-[var(--M-section-md)];
+}
+
+/* sm */
+.pt-section-sm {
+    @apply pt-[var(--D-section-sm)] max-lg:pt-[var(--T-section-sm)] max-sm:pt-[var(--M-section-sm)];
+}
+.pb-section-sm {
+    @apply pb-[var(--D-section-sm)] max-lg:pb-[var(--T-section-sm)] max-sm:pb-[var(--M-section-sm)];
+}
+.py-section-sm {
+    @apply py-[var(--D-section-sm)] max-lg:py-[var(--T-section-sm)] max-sm:py-[var(--M-section-sm)];
+}
+
+/* SECTION MARGIN */
+/* 2xl */
+.mt-section-2xl {
+    @apply mt-[var(--D-section-2xl)] max-lg:mt-[var(--T-section-2xl)] max-sm:mt-[var(--M-section-2xl)];
+}
+.mb-section-2xl {
+    @apply mb-[var(--D-section-2xl)] max-lg:mb-[var(--T-section-2xl)] max-sm:mb-[var(--M-section-2xl)];
+}
+
+/* xl */
+.mt-section-xl {
+    @apply mt-[var(--D-section-xl)] max-lg:mt-[var(--T-section-xl)] max-sm:mt-[var(--M-section-xl)];
+}
+.mb-section-xl {
+    @apply mb-[var(--D-section-xl)] max-lg:mb-[var(--T-section-xl)] max-sm:mb-[var(--M-section-xl)];
+}
+
+/* lg */
+.mt-section-lg {
+    @apply mt-[var(--D-section-lg)] max-lg:mt-[var(--T-section-lg)] max-sm:mt-[var(--M-section-lg)];
+}
+.mb-section-lg {
+    @apply mb-[var(--D-section-lg)] max-lg:mb-[var(--T-section-lg)] max-sm:mb-[var(--M-section-lg)];
+}
+
+/* md */
+.mt-section-md {
+    @apply mt-[var(--D-section-md)] max-lg:mt-[var(--T-section-md)] max-sm:mt-[var(--M-section-md)];
+}
+.mb-section-md {
+    @apply mb-[var(--D-section-md)] max-lg:mb-[var(--T-section-md)] max-sm:mb-[var(--M-section-md)];
+}
+
+/* sm */
+.mt-section-sm {
+    @apply mt-[var(--D-section-sm)] max-lg:mt-[var(--T-section-sm)] max-sm:mt-[var(--M-section-sm)];
+}
+.mb-section-sm {
+    @apply pb-[var(--D-section-sm)] max-lg:pb-[var(--T-section-sm)] max-sm:pb-[var(--M-section-sm)];
+}
+
+/* CONTENT MARGIN  */
+.mb-content-xs {
+    @apply mb-1;
+}
+.mb-content-sm {
+    @apply mb-3;
+}
+.mb-content-md {
+    @apply mb-5 max-sm:mb-5;
+}
+.mb-content-lg {
+    @apply mb-9 max-sm:mb-7;
+}
+.mb-content-xl {
+    @apply mb-12 max-sm:mb-10;
+}
+.mb-content-2xl {
+    @apply mb-16 max-sm:mb-12;
+}
+.mb-content-3xl {
+    @apply mb-20 max-sm:mb-12;
+}
+
+/* BORDER RADIUS */
+.rounded-primary {
+    @apply rounded-primary-desktop max-sm:rounded-primary-mobile;
+}
+.rounded-secondary {
+    @apply rounded-secondary-desktop max-sm:rounded-secondary-mobile;
+}
